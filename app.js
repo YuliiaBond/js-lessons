@@ -26,8 +26,8 @@ const withNum5 = '5'
 // alert(firstName + ' ' + name)
 
 // 3 ОПЕРАТОРЫ
-let currentYear = 2022
-const birthYear = 1989
+// let currentYear = 2022
+// const birthYear = 1989
 
 // const age = currentYear - birthYear
 // console.log(age)
@@ -64,4 +64,10 @@ c /= a
 
 // 5 ПРИОРИТЕТ ОПЕРАТОРОВ
 
-// время 1:03:30
+const fullAge = 26
+const birthYear = 1993
+const currentYear = 2020
+
+// > < >= <=
+const isFullAge = currentYear - birthYear >= fullAge
+console.log(isFullAge)

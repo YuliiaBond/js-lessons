@@ -64,10 +64,31 @@ c /= a
 
 // 5 ПРИОРИТЕТ ОПЕРАТОРОВ
 
-const fullAge = 26
-const birthYear = 1993
-const currentYear = 2020
+// const fullAge = 26
+// const birthYear = 1993
+// const currentYear = 2020
 
 // > < >= <=
-const isFullAge = currentYear - birthYear >= fullAge
-console.log(isFullAge)
+// const isFullAge = currentYear - birthYear >= fullAge
+// приоритетность можно посмотреть в табл mdn preority
+// console.log(isFullAge)
+
+// 6 УСЛОВНЫЕ ОПЕРАТОРЫ
+
+const courseStatus = 'pending' // ready, fail, pending
+
+// if (courseStatus === 'ready') {
+//   console.log('Курс уже готов и его можно проходить')
+// }
+// if (courseStatus === 'pending') {
+//   console.log('Курс пока находится в процессе разработки')
+// }
+
+if (courseStatus === 'ready') {
+  console.log('Курс уже готов и его можно проходить')
+} else if (courseStatus === 'pending') {
+  console.log('Курс пока находится в процессе разработки')
+} else {
+  console.log('Курс не получился')
+}
+// 1:13:52

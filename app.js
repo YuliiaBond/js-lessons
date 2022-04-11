@@ -75,7 +75,7 @@ c /= a
 
 // 6 УСЛОВНЫЕ ОПЕРАТОРЫ
 
-const courseStatus = 'pending' // ready, fail, pending
+// const courseStatus = 'pending' // ready, fail, pending
 
 // if (courseStatus === 'ready') {
 //   console.log('Курс уже готов и его можно проходить')
@@ -84,11 +84,60 @@ const courseStatus = 'pending' // ready, fail, pending
 //   console.log('Курс пока находится в процессе разработки')
 // }
 
-if (courseStatus === 'ready') {
-  console.log('Курс уже готов и его можно проходить')
-} else if (courseStatus === 'pending') {
-  console.log('Курс пока находится в процессе разработки')
-} else {
-  console.log('Курс не получился')
-}
-// 1:13:52
+// if (courseStatus === 'ready') {
+//   console.log('Курс уже готов и его можно проходить')
+// } else if (courseStatus === 'pending') {
+//   console.log('Курс пока находится в процессе разработки')
+// } else {
+//   console.log('Курс не получился')
+// }
+
+// const isReady = false
+// if (isReady) { 
+//    console.log('Все готово!')
+// } else { 
+//   console.log('Все не готово!')
+// }
+
+// Тернарное выражение:
+// isReady ? console.log('Все готово!') : console.log('Все не готово!')
+
+ 
+// const num1 = 42 // number
+// const num2 = '42' // string
+
+// console.log(num1 == num2)
+// console.log(num1 === num2)
+
+// 7 БУЛЕВАЯ ЛОГИКА
+
+// expr1 && expr2 (логическое И) вернет true, если оба будут true
+
+// expr1 || expr2 (оргическое ИЛИ) вернет true, если хоть один из них равен true
+
+// !expr (логическое НЕ) возвращает false если значение можно привести к true
+
+// 8 ФУНКЦИИ
+
+// function calculateAge(year) {
+//   return 2022 - year
+// }
+
+// const myAge = calculateAge(1989)
+// console.log(myAge)
+
+// function logInfoAbout(name, year) {
+//   const age = calculateAge(year)
+
+//   console.log('Человек по имени ' + name + ' сейчас имеет возраст ' + age)
+// }
+
+// logInfoAbout('Yuliia', 1989)
+// logInfoAbout('May', 1994)
+
+// 9 МАССИВЫ
+
+const cars = ['Mazda', 'Audi', 'Ford']
+console.log(cars)
+
+//1:30:23

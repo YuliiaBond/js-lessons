@@ -1,3 +1,5 @@
+// О С Н О В Ы   J S
+
 // 1 ПЕРЕМЕННЫЕ
 
 // const name = 'Yuliia'
@@ -138,6 +140,51 @@ c /= a
 // 9 МАССИВЫ
 
 const cars = ['Mazda', 'Audi', 'Ford']
-console.log(cars)
+// const cars = new Array('Mazda', 'Audi', 'Ford')
+// console.log(cars)
+// console.log(cars.length)
+// console.log(cars[1])
 
-//1:30:23
+// cars[0] = 'Porsche'
+// console.log(cars)
+
+// // cars[3] = 'Opel'
+// cars[cars.length] = 'Opel'
+// console.log(cars)
+
+
+// 10 ЦИКЛЫ
+
+// for (let i = 0; i < cars.length; i++) {
+//   // console.log(i)
+//   const car = cars[i]
+//   console.log(car)
+// }
+
+// for (let car of cars) {
+//   console.log(car)
+// }
+
+// 11 ОБЪЕКТЫ
+
+const person = {
+  firsName: 'Vladlen',
+  lastName: 'Minin',
+  year: 1993,
+  languages: ['Ru', 'En', 'De'],
+  hasWife: false,
+  greet: function () {
+    console.log('greet from person')
+  },
+}
+
+// console.log(person)
+// console.log(person.firsName)
+// console.log(person['lastName'])
+// const key = 'languages'
+// console.log(person[key])
+// person.hasWife = true
+// console.log(person)
+// person.isProgrammer = true
+// console.log(person)
+// person.greet()

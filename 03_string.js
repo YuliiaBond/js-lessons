@@ -29,18 +29,18 @@ function getAge() {
 // console.log(string.trimStart())
 // console.log(string.trimEnd())
 
-function logPerson(s, name, age) {
-  console.log(s, name, age)
-  if (age > 18) {
-    age = '18+'
-  }
-  // return 'Info about person'
-  return `${s[0]}${name}${s[1]}${age}${s[2]}`
-}
+// function logPerson(s, name, age) {
+//   console.log(s, name, age)
+//   if (age > 18) {
+//     age = '18+'
+//   }
+//   // return 'Info about person'
+//   return `${s[0]}${name}${s[1]}${age}${s[2]}`
+// }
 
-const personName = 'Yuliia'
-const personAge = 33
+// const personName = 'Yuliia'
+// const personAge = 33
 
-const output = logPerson`Name: ${personName}, age: ${personAge}!`
+// const output = logPerson`Name: ${personName}, age: ${personAge}!`
 
-console.log(output)
+// console.log(output)

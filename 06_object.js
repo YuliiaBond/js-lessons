@@ -10,7 +10,8 @@ const person = {
     console.log('greet from person')
   },
   info() {
-    console.info('Информация про человека по имени:', person.name)
+    console.log('this:', this)
+    console.info('Информация про человека по имени:', this.name)
   }
 }
 // console.log(person)
@@ -52,6 +53,46 @@ const person = {
 
 
 //Контекст
-person.info()
+// person.info()
 
-// 4:04:44
+const logger = {
+  keys() {
+    console.log('Object Keys:', Object.keys(this))
+  },
+
+  keysAndValues() {
+    Object.keys(this).forEach(key => {
+      console.log(`"${key}": ${this[key]}`)
+    })
+  },
+  
+  withParams(top = false, between = false, bottom = false) {
+    if (top) {
+      console.log('----- Start -----')
+    }
+    Object.keys(this).forEach((key, index, array) => {
+      console.log(`"${key}": ${this[key]}`)
+      if (between && index !== array.length - 1) {
+        console.log('--------------')
+      }
+    })
+    if (bottom) {
+      console.log('----- End -----')
+    }
+  }
+}
+// const bound = logger.keys.bind(person)
+// bound()
+// logger.keys.call(person)
+// logger.keysAndValues.call(logger)
+// logger.keysAndValues.call(person)
+
+// logger.withParams.call(person)
+// logger.withParams.call(person, true)
+// logger.withParams.call(person, true, true)
+// logger.withParams.call(person, true, true, true)
+logger.withParams.apply(person, [true, true, true])
+
+
+
+
